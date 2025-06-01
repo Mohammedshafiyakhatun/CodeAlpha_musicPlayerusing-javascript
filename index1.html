@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <div class="player">
+    <h2 id="title">moonlight</h2>
+    <h4 id="artist">jamendo</h4>
+    <audio controls id="audio" src="C:\Users\shafiya\AppData\Local\Temp\08192a30-1637-4a47-a67e-97c594f085c8_Playlist - Chill Zone - 500605176 --- Jamendo - MP3.zip.5c8\069-2060607-Cephas-Moonlight.mp3"></audio>
+
+    <div class="controls">
+      <button id="prev">⏮</button>
+      <button id="next">⏭</button>
+    </div>
+
+    <div class="progress-container">
+      <span id="current-time">0:00</span>
+      <input type="range" id="progress" value="0" />
+      <span id="duration">1:00</span>
+    </div>
+
+    <input type="range" id="volume" min="0" max="1" step="0.01" />
+    <ul id="playlist"></ul>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
